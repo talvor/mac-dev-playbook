@@ -4,6 +4,23 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: true
 configure_terminal: true
 configure_osx: true
+configure_zsh: true
+
+# Set to 'true' to configure Visual Studio Code
+configure_vscode: true
+vscode_extensions:
+  - amatiasq.sort-imports
+  - arcticicestudio.nord-visual-studio-code
+  - dbaeumer.vscode-eslint
+  - EditorConfig.EditorConfig
+  - esbenp.prettier-vscode
+  - formulahendry.auto-rename-tag
+  - ms-vscode.vscode-typescript-tslint-plugin
+  - ms-vsliveshare.vsliveshare
+  - ms-vsliveshare.vsliveshare-audio
+  - ms-vsliveshare.vsliveshare-pack
+  - nextfaze.json-parse-stringify
+  - Perkovec.emoji
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -33,38 +50,19 @@ dotfiles_files:
   - .inputrc
   - .osx
 
-zsh-customizations_repo: https://github.com/talvor/zsh-customizations.git
-zsh-customizations_repo_accept_hostkey: true
-zsh-customizations_repo_local_destination: ~/.zsh-customizations
+zsh_customizations_repo: https://github.com/talvor/zsh-customizations.git
+zsh_customizations_repo_accept_hostkey: true
+zsh_customizations_repo_local_destination: ~/.zsh-customizations
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  # - autoconf
-  # - bash-completion
-  # - doxygen
-  # - gettext
-  # - gifsicle
   - git
-  # - github/gh/gh
-  # - go
-  # - gpg
-  # - httpie
-  # - iperf
-  # - libevent
-  # - sqlite
-  # - mcrypt
-  # - nmap
-  # - node
   - nvm
-  # - php
   - ssh-copy-id
   - cowsay
-  # - readline
-  # - openssl
-  # - pv
   - wget
-  # - wrk
   - zsh-history-substring-search
+  - docker-compose
 
 homebrew_taps:
   - homebrew/core
@@ -81,6 +79,8 @@ homebrew_cask_apps:
   - atom
   - alacritty
   - visual-studio-code
+  - signal
+  - veracrypt
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

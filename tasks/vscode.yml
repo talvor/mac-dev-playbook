@@ -1,0 +1,9 @@
+---
+
+- name: Install vscode extensions
+  ansible.builtin.include_role:
+      name: gantsign.visual-studio-code-extensions
+  vars:
+    users:
+        - username: "{{ lookup('env', 'USER') }}"
+          visual_studio_code_extensions: "{{ vscode_extensions }}"

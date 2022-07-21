@@ -1,0 +1,8 @@
+---
+
+- name: Ensure zsh-customizations repository is cloned locally.
+  git:
+    repo: "{{ zsh_customizations_repo }}"
+    dest: "{{ zsh_customizations_repo_local_destination }}"
+    accept_hostkey: "{{ zsh_customizations_repo_accept_hostkey }}"
+  become: false

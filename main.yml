@@ -27,7 +27,12 @@
 
   tasks:
     - import_tasks: tasks/zsh-customizations.yml
+      when: configure_zsh
       tags: ['zsh-customizations']
+
+    - import_tasks: tasks/vscode.yml
+      when: configure_vscode
+      tags: ['vscode']
 
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers

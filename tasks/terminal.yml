@@ -13,11 +13,6 @@
   changed_when: false
   when: "'Nord' not in terminal_theme.stdout"
 
-- name: Ensure custom Terminal profile is added.
-  command: open /tmp/Nord.terminal
-  changed_when: false
-  when: "'Nord' not in terminal_theme.stdout"
-
 # TODO: This doesn't work in Yosemite. Consider a different solution?
 - name: Ensure custom Terminal profile is set as default.
   command: "{{ item }}"
