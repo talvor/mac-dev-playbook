@@ -49,6 +49,9 @@
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
+    - import_tasks: tasks/ssh_keys.yml
+      tags: ['ssh-keys']
+
     - block:
         - name: Run configured post-provision ansible task files.
           include_tasks: "{{ outer_item }}"

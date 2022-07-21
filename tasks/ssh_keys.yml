@@ -1,0 +1,9 @@
+---
+# Install SSH Keys.
+- name: Get current Terminal profile.
+  copy:
+    src: "files/ssh/{{ item.name }}"
+    dest: ~/.ssh/
+    mode: "{{ item.mode }}"
+  with_items: "{{ ssh_keys }}"
+  changed_when: false
