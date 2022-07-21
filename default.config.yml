@@ -29,6 +29,15 @@ ssh_keys:
   - name: id_rsa.pub
     mode: "644"
 
+configure_oh_my_zsh: true
+oh_my_zsh_theme: agnoster
+oh_my_zsh_plugins:
+  - git
+
+configure_nerd_fonts: true
+nerd_fonts: 
+  - Sauce-Code-Pro
+
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
 dockitems_remove: []
@@ -56,6 +65,7 @@ dotfiles_files:
   - .gitignore
   - .inputrc
   - .osx
+  - .alacritty.yml
 
 zsh_customizations_repo: https://github.com/talvor/zsh-customizations.git
 zsh_customizations_repo_accept_hostkey: true
@@ -74,6 +84,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:

@@ -50,7 +50,16 @@
       tags: ['extra-packages']
 
     - import_tasks: tasks/ssh_keys.yml
+      when: configure_ssh_keys
       tags: ['ssh-keys']
+
+    - import_tasks: tasks/oh_my_zsh.yml
+      when: configure_oh_my_zsh
+      tags: ['oh_my_zsh']
+
+    - import_tasks: tasks/nerd_fonts.yml
+      when: configure_nerd_fonts
+      tags: ['nerd_fonts']
 
     - block:
         - name: Run configured post-provision ansible task files.
