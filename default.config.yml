@@ -3,7 +3,7 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
 configure_terminal: true
-configure_osx: false
+configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -31,7 +31,7 @@ dotfiles_files:
   - .zshrc
   - .gitignore
   - .inputrc
-  # - .osx
+  - .osx
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
