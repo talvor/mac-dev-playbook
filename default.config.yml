@@ -33,6 +33,10 @@ dotfiles_files:
   - .inputrc
   - .osx
 
+zsh-customizations_repo: https://github.com/talvor/zsh-customizations.git
+zsh-customizations_repo_accept_hostkey: true
+zsh-customizations_repo_local_destination: ~/.zsh-customizations
+
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   # - autoconf
