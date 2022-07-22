@@ -1,5 +1,4 @@
 ---
-
 - name: Install & setup oh-my-zsh
   ansible.builtin.include_role:
       name: gantsign.oh-my-zsh
@@ -8,3 +7,19 @@
         - username: "{{ lookup('env', 'USER') }}"
           theme: "{{ oh_my_zsh_theme }}"
           plugins: "{{ oh_my_zsh_plugins }}"
+
+- name: "Check for line in  ~/.zshrc"
+  lineinfile: 
+    dest: ~/.zshrc
+    line: "# Setup NVM"
+  check_mode: yes
+  register: presence
+
+- name: "Append to  ~/.zshrc"
+  ansible.builtin.blockinfile:
+    block: "{{ lookup('ansible.builtin.file', 'files/zshrc') }}"
+    marker: "# ANSIBLE MANAGED BLOCK - "
+    path: ~/.zshrc
+  when: '"line added" in presence.msg'
+  
+

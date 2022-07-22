@@ -1,0 +1,13 @@
+# Setup NVM
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+  
+# Setup zsh-customizations
+export PROJECT_DIR="$HOME/Development/Atlassian/Projects/"
+export PROJECT_EDITOR="/opt/homebrew/bin/code"
+for file in ~/.zsh-customizations/*.sh; do
+    source "$file"
+done
+

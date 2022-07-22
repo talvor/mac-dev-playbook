@@ -61,11 +61,13 @@ dotfiles_repo: https://github.com/talvor/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
-  - .zshrc
+  # - .zshrc
   - .gitignore
   - .inputrc
   - .osx
   - .alacritty.yml
+  - .yabairc
+  - .skhdrc
 
 zsh_customizations_repo: https://github.com/talvor/zsh-customizations.git
 zsh_customizations_repo_accept_hostkey: true
@@ -80,7 +82,9 @@ homebrew_installed_packages:
   - wget
   - zsh-history-substring-search
   - docker-compose
-
+  - "koekeishiya/formulae/yabai"
+  - "koekeishiya/formulae/skhd"
+  
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
