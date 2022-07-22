@@ -86,6 +86,7 @@ homebrew_installed_packages:
   - "koekeishiya/formulae/yabai"
   - "koekeishiya/formulae/skhd"
   - jq
+  - osx-cpu-temp
   
 homebrew_taps:
   - homebrew/core
