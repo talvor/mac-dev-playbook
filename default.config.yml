@@ -66,6 +66,10 @@ dotfiles_files:
   - .yabairc
   - .skhdrc
 
+configure_config: true
+config_files:
+  - yabai
+
 zsh_customizations_repo: https://github.com/talvor/zsh-customizations.git
 zsh_customizations_repo_accept_hostkey: true
 zsh_customizations_repo_local_destination: ~/.zsh-customizations
@@ -81,6 +85,7 @@ homebrew_installed_packages:
   - docker-compose
   - "koekeishiya/formulae/yabai"
   - "koekeishiya/formulae/skhd"
+  - jq
   
 homebrew_taps:
   - homebrew/core

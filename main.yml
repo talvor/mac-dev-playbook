@@ -30,6 +30,10 @@
       when: configure_dotfiles
       tags: ['dotfiles']
 
+    - import_tasks: tasks/copy_config.yml
+      when: configure_config
+      tags: ['config']
+
     - import_tasks: tasks/zsh-customizations.yml
       when: configure_zsh
       tags: ['zsh-customizations']

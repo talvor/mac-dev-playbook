@@ -1,0 +1,9 @@
+---
+- name: Copy config
+  vars:
+    home: "{{ lookup('env', 'HOME') }}"
+  copy:
+    src: "files/config/{{ item }}/"
+    dest: "{{ home }}/.config/{{ item }}/"
+    mode: preserve
+  with_items: "{{ config_files }}"
