@@ -1,0 +1,9 @@
+---
+- name: Copy dotfiles
+  vars:
+    home: "{{ lookup('env', 'HOME') }}"
+  copy:
+    src: "files/dotfiles/{{ item }}"
+    dest: "{{ home }}"
+    mode: preserve
+  with_items: "{{ dotfiles_files }}"
