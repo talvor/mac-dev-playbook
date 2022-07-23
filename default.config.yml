@@ -82,12 +82,13 @@ homebrew_installed_packages:
   - cowsay
   - wget
   - zsh-history-substring-search
+  - docker
   - docker-compose
   - "koekeishiya/formulae/yabai"
   - "koekeishiya/formulae/skhd"
   - jq
   - osx-cpu-temp
-  
+
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
@@ -96,7 +97,6 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
-  - docker
   - dropbox
   - firefox
   - gitkraken
@@ -106,6 +106,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - signal
   - veracrypt
+  - rancher
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
