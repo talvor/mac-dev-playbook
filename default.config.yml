@@ -21,7 +21,7 @@ vscode_extensions:
   - nextfaze.json-parse-stringify
   - Perkovec.emoji
 
-configure_ssh_keys: true
+configure_ssh_keys: false
 ssh_keys:
   - name: id_rsa
     mode: "600"
@@ -70,6 +70,11 @@ configure_config: true
 config_files:
   - yabai
 
+configure_clone_repos: true
+clone_repos: 
+  - repo: https://github.com/AdamWagner/stackline.git
+    dest: ~/.hammerspoon/stackline
+    
 zsh_customizations_repo: https://github.com/talvor/zsh-customizations.git
 zsh_customizations_repo_accept_hostkey: true
 zsh_customizations_repo_local_destination: ~/.zsh-customizations
@@ -82,12 +87,12 @@ homebrew_installed_packages:
   - cowsay
   - wget
   - zsh-history-substring-search
-  - docker
   - docker-compose
   - "koekeishiya/formulae/yabai"
   - "koekeishiya/formulae/skhd"
   - jq
   - osx-cpu-temp
+  - mvnvm
 
 homebrew_taps:
   - homebrew/core
@@ -106,7 +111,8 @@ homebrew_cask_apps:
   - visual-studio-code
   - signal
   - veracrypt
-  - rancher
+  - docker
+  - hammerspoon
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

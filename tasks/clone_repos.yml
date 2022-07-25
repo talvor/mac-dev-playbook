@@ -1,0 +1,8 @@
+---
+- name: Ensure repository is cloned locally.
+  git:
+    repo: "{{ item.repo }}"
+    dest: "{{ item.dest }}"
+    accept_hostkey: true
+  become: false
+  with_items: "{{ clone_repos }}"
