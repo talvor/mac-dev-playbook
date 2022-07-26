@@ -21,7 +21,7 @@ vscode_extensions:
   - nextfaze.json-parse-stringify
   - Perkovec.emoji
 
-configure_ssh_keys: false
+configure_ssh_keys: true
 ssh_keys:
   - name: id_rsa
     mode: "600"
