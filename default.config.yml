@@ -65,6 +65,7 @@ dotfiles_files:
   - .alacritty.yml
   - .yabairc
   - .skhdrc
+  - .hammerspoon
 
 configure_config: true
 config_files:
