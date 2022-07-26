@@ -20,6 +20,7 @@ vscode_extensions:
   - ms-vsliveshare.vsliveshare-pack
   - nextfaze.json-parse-stringify
   - Perkovec.emoji
+  - eamodio.gitlens
 
 configure_ssh_keys: true
 ssh_keys:
