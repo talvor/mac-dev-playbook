@@ -34,7 +34,7 @@ oh_my_zsh_plugins:
   - git
 
 configure_nerd_fonts: true
-nerd_fonts: 
+nerd_fonts:
   - Sauce-Code-Pro
 
 # Set to 'true' to configure the Dock via dockutil.
@@ -50,7 +50,7 @@ dockitems_persist: []
 #   pos: 5
 
 configure_sudoers: false
-sudoers_custom_config: ''
+sudoers_custom_config: ""
 # Example:
 # sudoers_custom_config: |
 #   # Allow users in admin group to use sudo with no password.
@@ -72,10 +72,10 @@ config_files:
   - yabai
 
 configure_clone_repos: true
-clone_repos: 
+clone_repos:
   - repo: https://github.com/AdamWagner/stackline.git
     dest: ~/.hammerspoon/stackline
-    
+
 zsh_customizations_repo: https://github.com/talvor/zsh-customizations.git
 zsh_customizations_repo_accept_hostkey: true
 zsh_customizations_repo_local_destination: ~/.zsh-customizations
@@ -114,6 +114,7 @@ homebrew_cask_apps:
   - veracrypt
   - docker
   - hammerspoon
+  - sqlitestudio
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
