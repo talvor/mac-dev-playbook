@@ -11,3 +11,5 @@ for file in ~/.zsh-customizations/*.sh; do
     source "$file"
 done
 
+# Setup pyenv-virtualenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
